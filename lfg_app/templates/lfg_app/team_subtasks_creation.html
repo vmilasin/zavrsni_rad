@@ -1,0 +1,11 @@
+{% extends "base_start_team.html" %}
+
+{% block data %}
+<div class="form">
+	<form action="{% url 'team_subtasks_creation' requested_team.id requested_task.id %}", method="POST">
+	   {% csrf_token %}
+	   {{ subtask_creation_form }}
+	   <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock data %}

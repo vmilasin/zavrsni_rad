@@ -1,0 +1,22 @@
+{% extends "base_start_team.html" %}
+
+{% block data %}
+<div class="context">
+    {% if logged_in_user == leader.user or logged_in_user in mods.user %}
+    <div class="interaction">
+    <br>
+    <a href="{% url 'team_forum_creation' requested_team.id %}">Create a new subforum</a>
+    <br>
+    </div>
+    {% endif %}
+    <div class="context_data">
+        <ul>
+        {% for result in forum_list %}
+           <a class="task" href="{{ result.get_absolute_url }}"><l1 class="forum_thread">{{ result.title|title }}</l1></a>
+           {% empty %}
+           <li>Create new subforums!</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock data %}

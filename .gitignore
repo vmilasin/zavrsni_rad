@@ -1,0 +1,9 @@
+*.pyc
+lfg_app/migrations/
+<<<<<<< HEAD
+lfg_app/static/images/*
+!lfg_app/static/images/default_images/
+=======
+!lfg_app/static/images/default_images/
+lfg_app/static/images/*
+>>>>>>> bb7e6217562a1c9ff5a834d7989688fd663f4981

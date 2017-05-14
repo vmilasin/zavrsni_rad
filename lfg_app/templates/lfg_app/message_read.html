@@ -1,0 +1,13 @@
+{% extends "base_start_user.html" %}
+
+{% block data %}
+<div class="context">
+	<div class="context_data">
+		<br><br><br>
+        <div class="post">
+            <div class="post_user"><p>{{ requested_message.sender.first_name|title }} {{ requested_message.sender.last_name|title }}  ({{ requested_message.date_sent|date:"d.m.Y.  H:i" }}): </p></div>
+            <div class="post_content"><pre>{{ requested_message.content }}</pre></div>
+        </div>		
+	</div>
+</div>
+{% endblock data %}

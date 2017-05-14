@@ -1,0 +1,48 @@
+{% extends "base_start_team.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>Subtasks:</h1>
+    <div class="interaction">
+        <br>
+        <a href="{% url 'team_subtasks_creation' requested_team.id requested_task.id %}">New subtask</a>
+    </div>    
+    <div class="context_data">
+        <ul>
+        {% for result in pages %}
+            <l1>                
+                <div class="post">
+                    <p>{{ result.subtask|title }}  ({{ result.date_created|date:"d.m.Y.  H:i" }})</p>
+                    <br>
+                    <pre>{{ result.description }}</pre>
+                    {% if result.date_finished %}
+                    <hr>
+                    <p>(Finished on: {{ result.date_finished|date:"d.m.Y.  H:i" }})</p>
+                    {% endif %}
+                    </div>                
+                {% if not result.date_finished %}
+                <a class="task" href="{% url 'subtask_finish' requested_team.id requested_task.id result.id %}">
+                    <img src="{% static 'images/default_images/checkmark.png' %}" alt="finish" height="40" width="40">
+                </a>
+                {% endif %}
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>
+        <div class="pagination">
+            <span class="step-links">
+                {% if pages.has_previous %}
+                    <a href="?page={{ pages.previous_page_number }}">Previous</a>
+                {% endif %}
+                <span class="current">
+                    Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+                </span>
+                {% if pages.has_next %}
+                    <a href="?page={{ pages.next_page_number }}">Next</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock data %}

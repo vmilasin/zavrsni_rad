@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="index_content">
+	<div class="info">
+		<h3>You have successfuly registered your account!</h1>
+		<p>Please update your info in User management once you log in.</p>
+		<a href="{% url 'index' %}">Return and log in to your account.</a>
+	</div>
+{% endblock content %}

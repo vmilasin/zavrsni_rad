@@ -1,0 +1,14 @@
+{% extends "base_start_team.html" %}
+
+{% block data %}
+<div class="context">
+	<h1>Your review of {{ requested_team.name|title }}:</h1>
+	<div class="form">
+		<form action="{% url 'review_team' requested_team.id %}", method="POST">
+		   {% csrf_token %}
+		   {{ review_team_form }}
+		   <input type="submit" value="Submit">
+	    </form>
+	</div>
+</div>
+{% endblock data %}

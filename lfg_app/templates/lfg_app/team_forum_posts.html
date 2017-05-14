@@ -1,0 +1,45 @@
+{% extends "base_start_team.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>{{ requested_thread.title|title }}</h1>
+    <div class="interaction">
+        <br>
+        <a href="{% url 'team_forum_posts_creation' requested_team.id requested_forum.id requested_thread.id %}">Create a new post</a>
+        <br>
+    </div>
+    <div class="context_data">
+        <ul>
+        {% for result in pages %}
+            <l1>
+                <div class="profile_data">
+                    <div>
+                        <img src="/static/images/{{ result.creator.userprofile.image }}" height="80" width="80">
+                    </div>
+                    <div>
+                        <p>{{ result.creator.first_name|title }} {{ result.creator.last_name|title }}   ({{ result.date_created|date:"d.m.Y.  H:i" }})</p>
+                        <p>Posts: {{ result.creator.userprofile.posts }}</p>
+                    </div>
+                </div>
+                <div class="post"><pre>{{ result.content }}<pre></div>
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>
+        <div class="pagination">
+            <span class="step-links">
+                {% if pages.has_previous %}
+                    <a href="?page={{ pages.previous_page_number }}">Previous</a>
+                {% endif %}
+                <span class="current">
+                    Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+                </span>
+                {% if pages.has_next %}
+                    <a href="?page={{ pages.next_page_number }}">Next</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock data %}

@@ -1,0 +1,31 @@
+{% extends "base_start_user.html" %}
+
+{% block data %}
+<div class="context">
+    <h1>Inbox:</h1>
+    <br>
+    <div class="context_data">
+        <ul>
+        {% for message in pages %}
+           <l1 class="result_url"><a href="{% url 'message_read' message.id %}">{{ message.sender.first_name|title }} {{ message.sender.last_name|title }} ({{ message.date_sent|date:"d.m.Y.  H:i" }}):  "{{ message.title|title }}"</a></l1>
+           {% empty %}
+           <li>No new messages.</li>
+        {% endfor %}
+        </ul>
+        <br>        
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endblock data %}

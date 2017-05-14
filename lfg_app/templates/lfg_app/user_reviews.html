@@ -1,0 +1,34 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>Reviews:</h1>
+    <div class="context_data">
+        <ul>
+            {% for result in pages %}
+            <l1>
+                <div class="post">
+                    <div class="post_user"><p>{{ result.reviewed_by.first_name|title }} {{ result.reviewed_by.last_name|title }}  ({{ result.date_created|date:"d.m.Y.  H:i" }}): {{ result.rating }}</p></div>
+                    <div class="post_content"><pre>{{ result.content }}</pre></div>
+                </div>
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>
+    </div>
+	<div class="pagination">
+    	<span class="step-links">
+        	{% if pages.has_previous %}
+            	<a href="?page={{ pages.previous_page_number }}">Previous</a>
+        	{% endif %}
+        	<span class="current">
+            	Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+        	</span>
+        	{% if pages.has_next %}
+            	<a href="?page={{ pages.next_page_number }}">Next</a>
+        	{% endif %}
+    	</span>
+	</div>
+</div>
+{% endblock data %}

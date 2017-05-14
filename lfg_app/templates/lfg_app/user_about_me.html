@@ -1,0 +1,32 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="about_info">
+	{% if requested_user.userprofile.birthday != None %}
+	<h2>Born: </h2><p>{{ requested_user.userprofile.birthday }}</p>
+	{% endif %}
+
+	{% if requested_user.email != "" %}
+	<h2>E-mail: </h2><p>{{ requested_user.email }}</p>
+	{% endif %}
+
+	{% if requested_user.userprofile.country != "" %}
+	<h2>Country: </h2><p>{{ requested_user.userprofile.country|title }}</p>
+	{% endif %}
+
+	{% if requested_user.userprofile.city != "" %}
+	<h2>City: </h2><p>{{ requested_user.userprofile.city|title }}</p>
+	{% endif %}
+
+	{% if requested_user.userprofile.address != "" %}
+	<h2>Address: </h2><p>{{ requested_user.userprofile.address|title }}</p>
+	{% endif %}
+
+	{% if requested_user.userprofile.about_me != "" %}
+	<br>
+	<h2>Personal description:</h2>
+	<pre>{{ requested_user.userprofile.about_me }}</pre>
+	{% endif %}
+</div>
+{% endblock data %}

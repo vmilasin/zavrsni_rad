@@ -1,0 +1,33 @@
+{% extends "base_start_team.html" %}
+
+{% block data %}
+<div class="context">
+    <h1>{{ requested_forum.title|title }}</h1>
+    <div class="interaction">
+        <br>
+        <a href="{% url 'team_forum_threads_creation' requested_team.id requested_forum.id %}">Create a new thread</a>
+        <br>
+    </div>
+    <div class="context_data">
+        <ul>
+        {% for result in pages %}
+           <a class="task" href="{{ result.get_absolute_url }}"><l1 class="forum_thread">{{ result.title|title }}</l1></a>
+        {% endfor %}
+        </ul>
+        <br>
+        <div class="pagination">
+            <span class="step-links">
+                {% if pages.has_previous %}
+                    <a href="?page={{ pages.previous_page_number }}">Previous</a>
+                {% endif %}
+                <span class="current">
+                    Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+                </span>
+                {% if pages.has_next %}
+                    <a href="?page={{ pages.next_page_number }}">Next</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock data %}

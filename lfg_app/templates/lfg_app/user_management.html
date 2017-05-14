@@ -1,0 +1,12 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="form">
+	<form enctype="multipart/form-data" action="{% url 'user_management' %}", method="POST">
+	   {% csrf_token %}
+	   {{ user_management_form }}
+	   <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock data %}

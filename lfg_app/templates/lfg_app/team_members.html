@@ -1,0 +1,42 @@
+{% extends "base_start_team.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>Team members:</h1>
+    <div class="context_data">
+        <ul>
+        {% for result in pages %}
+            <l1 class="result_url">
+                <a href="{{ result.user.userprofile.get_absolute_url }}">
+                    <div>                        
+                        <img src="/static/images/{{ result.user.userprofile.image }}" height="80" width="80">
+                    </div>
+                    <div>
+                        <p>  {{ result.user.first_name|title }} {{ result.user.last_name|title }}  |  {{ result.user_type }} </p>
+                    </div>
+                </a>
+                {% if logged_in_user == leader.user or logged_in_user in mods.user %}
+                    <a href="{% url 'team_membership_management' requested_team.id result.user.id %}"><img src="{% static 'images/default_images/config.png' %}" alt="config" height="20" width="20"></a>
+                    <a href="{% url 'kick_member' requested_team.id result.id %}"><img src="{% static 'images/default_images/leave.png' %}" alt="kick" height="20" width="20"></a>
+                {% endif %}
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>
+        <div class="pagination">
+            <span class="step-links">
+                {% if pages.has_previous %}
+                    <a href="?page={{ pages.previous_page_number }}">Previous</a>
+                {% endif %}
+                <span class="current">
+                    Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+                </span>
+                {% if pages.has_next %}
+                    <a href="?page={{ pages.next_page_number }}">Next</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock data %}

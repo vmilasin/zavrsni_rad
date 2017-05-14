@@ -1,0 +1,59 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <div class="interaction">
+    {% if user_id != logged_in_user.id|slugify and friendship_request_sent == None %}
+        <a class='result_url' href="{% url 'user_overview' requested_user.id %}?friendship_request=Y"><div><p>Add this user as your friend</p></div></a>
+    {% endif %}
+    {% if user_id != logged_in_user.id|slugify %}
+        <a class='result_url' href="{% url 'message_compose' requested_user.id %}"><div><p>Send a message</p></div></a>
+        <a class='result_url' href="{% url 'review_user' requested_user.id %}"><div><p>Review this user</p></div></a>
+    {% endif %}
+    </div>
+
+    {% if user_id == logged_in_user.id|slugify %}
+    <div class="form">
+    <form action="{% url 'user_overview' logged_in_user.id %}", method="POST">
+       {% csrf_token %}
+       {{ user_status_form }}
+       <input type="submit" value="Submit">
+    </form>
+    <br>        
+    </div>
+    {% endif %}
+
+    <div class="context_data">
+    <ul>
+    {% for result in pages %}
+        <l1>
+            <div class="post">
+                <div class="post_user"><p>{{ result.user.first_name|title }} {{ result.user.last_name|title }}  ({{ result.date_created|date:"d.m.Y.  H:i" }}): </p></div>
+                {% if user_id == logged_in_user.id|slugify %}
+                <div class="post_delete"><a href="{% url 'del_user_status' result.id %}"><img src="{% static 'images/default_images/bin.png' %}" height="20" width="20"></a></div>
+                {% endif %}
+                <div class="post_content"><pre>{{ result.content }}</pre></div>
+            </div>
+        </l1>
+    {% endfor %}
+    </ul>
+    <br>        
+    </div>
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+    <br> 
+</div>
+{% endblock data %}

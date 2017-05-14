@@ -1,0 +1,14 @@
+{% extends "base_start_user.html" %}
+
+{% block data %}
+<div class="context">
+	<h1>Your review of {{ requested_user_reviewed.first_name|title }} {{ requested_user_reviewed.last_name|title }}:</h1>
+	<div class="form">
+		<form action="{% url 'review_user' requested_user_reviewed.id %}", method="POST">
+		   {% csrf_token %}
+		   {{ review_user_form }}
+		   <input type="submit" value="Submit">
+	    </form>
+	</div>
+</div>
+{% endblock data %}

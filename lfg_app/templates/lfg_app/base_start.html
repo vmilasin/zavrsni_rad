@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block login %}
+<div id="logged_in_info">
+	<h4>{{ request.user.first_name|title }} </h4>
+	<h4>{{ request.user.last_name|title }}  </h4>
+	<img src="/static/images/{{ request.user.userprofile.image }}" height="50" width="50">
+	<a href="{% url 'logout' %}">Log out</a>
+</div>
+{% endblock login %}
+
+{% block sidebar %}
+<div id="sidebar">
+	<ul>
+		<li><a href="{% url 'user_overview' request.user.id %}">Home</a></li>
+		<li><a href="{% url 'user_management' %}">User Management</a></li>
+		<br>
+		<li><a href="{% url 'user_friends' request.user.id %}">My Friends</a></li>
+		<li><a href="{% url 'user_teams' request.user.id %}">My Teams</a></li>
+		<br>
+		<li><a href="{% url 'team_creation' %}">Team Creation</a></li>
+		<br>
+		<li><a href="{% url 'search_users' %}">Search Users</a></li>
+		<li><a href="{% url 'search_category' %}">Search Teams by Category</a></li>
+		<li><a href="{% url 'search_teams' %}">Search Teams by Name</a></li>
+		<br>
+		<li><a href="{% url 'user_inbox' %}">Messages - Inbox</a></li>
+		<li><a href="{% url 'user_outbox' %}">Messages - Outbox</a></li>
+		<br>
+		<li><a href="{% url 'user_requests' %}">Friendship Requests</a></li>
+		<li><a href="{% url 'user_invitations' %}">Team Invitations</a></li>
+	</ul>
+</div>
+{% endblock sidebar %}
+
+{% block content %}
+	<div id="content">
+	{% if new_requests_count != 0 or new_invitations_count != 0 or new_messages_count != 0 %}
+	<div id="incoming">
+		{% if new_requests_count != 0 %}
+			<div><a href="{% url 'user_requests' %}">You have {{ new_requests_count }} new friendship requests!</a></div>
+		{% endif %}
+		{% if new_invitations_count != 0 %}
+			<div><a href="{% url 'user_invitations' %}">You have been invited into {{ new_invitations_count }} new teams!</a></div>
+		{% endif %}
+		{% if new_messages_count != 0 %}
+			<div><a href="{% url 'user_inbox' %}">You have {{ new_messages_count }} unread messages!</a></div>
+		{% endif %}
+	</div>
+	{% endif %}
+	{% block profile_data %}
+	{% endblock profile_data %}
+	{% block content_data %}
+	{% endblock content_data %}
+{% endblock content %}

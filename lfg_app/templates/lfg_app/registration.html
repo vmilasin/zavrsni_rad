@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="index_content">
+		<div class="registration">
+			<h3>Sign up:</h3>
+			{% block errors %}{% endblock errors %}
+			<form action="{% url 'registration' %}", method="POST">
+				{% csrf_token %}
+				{{ registration_form.as_p }}
+			<input type="submit" value="Register">
+			</form>
+		</div>
+{% endblock content %}

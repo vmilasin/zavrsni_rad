@@ -1,0 +1,9 @@
+{% extends "base_start_user.html" %}
+
+{% block data %}
+<div>
+	<h1>You have successfuly created your team!</h1>
+	<p>Please update your info in Team management.</p>
+	<a href="{% url 'team_overview' requested_team.id %}">Click here to go to your new team.</a>
+</div>
+{% endblock data %}

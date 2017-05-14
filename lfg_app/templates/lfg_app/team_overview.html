@@ -1,0 +1,57 @@
+{% extends "base_start_team.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <div class="interaction">
+    <a href="{% url 'review_team' requested_team.id %}"><div class="submenu"><p>Review this team</p></div></a>
+    </div>
+    <br>
+    {% if logged_in_user == leader.user or logged_in_user in mods.user %}
+    <div class="form">
+    <form action="{% url 'team_overview' requested_team.id %}", method="POST">
+       {% csrf_token %}
+       {{ team_status_form }}
+       <input type="submit" value="Submit">
+    </form>        
+    </div>
+    <br>
+    {% endif %}
+    <div class="context_data">
+    <ul>
+    {% for result in pages %}
+        <l1>
+            <div class="post">
+                <div class="post_user">
+                    <p>{{ result.team.name|title }}  ({{ result.date_created|date:"d.m.Y.  H:i" }}): </p>
+                </div>
+                {% if logged_in_user == leader.user or logged_in_user in mods.user %}
+                <div class="post_delete">
+                    <a href="{% url 'del_team_status' requested_team.id result.id %}"><img src="{% static 'images/default_images/bin.png' %}" width="20" height="20"></a>
+                </div>
+                {% endif %}
+                <div class="post_content">
+                    <pre>{{ result.content }}</pre>
+                </div>
+            </div>
+        </l1>
+    {% endfor %}
+    </ul>
+    <br>        
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+    <br>
+</div>
+{% endblock data %}

@@ -1,0 +1,1221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"use",
+				"user"
+			],
+			[
+				"mod",
+				"models"
+			],
+			[
+				"lo",
+				"logged_in_user"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"requested_memb",
+				"requested_member"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"page",
+				"pages"
+			],
+			[
+				"users_",
+				"users_list"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"date",
+				"date_created"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"ac",
+				"accepted"
+			],
+			[
+				"frien",
+				"friend"
+			],
+			[
+				"m",
+				"ModelAdmin"
+			],
+			[
+				"Fil",
+				"FILES"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"log",
+				"login_required"
+			],
+			[
+				"fi",
+				"filter"
+			],
+			[
+				"requested",
+				"requested_user"
+			],
+			[
+				"memb",
+				"member_id"
+			],
+			[
+				"Me",
+				"Membership"
+			],
+			[
+				"friend",
+				"friendship_request"
+			],
+			[
+				"invitatio",
+				"invitation_id"
+			],
+			[
+				"fr",
+				"friend"
+			],
+			[
+				"User",
+				"User"
+			],
+			[
+				"M",
+				"Membership"
+			],
+			[
+				"messa",
+				"message_id"
+			],
+			[
+				"requested_",
+				"requested_user_info"
+			],
+			[
+				"status",
+				"status_id"
+			],
+			[
+				"logi",
+				"login_required"
+			],
+			[
+				"cate",
+				"category_list"
+			],
+			[
+				"invi",
+				"invitation_team"
+			],
+			[
+				"crea",
+				"create"
+			],
+			[
+				"tas",
+				"task_id"
+			],
+			[
+				"requseted",
+				"requested_team_info"
+			],
+			[
+				"requse",
+				"requested_team_reviewed"
+			],
+			[
+				"Tea",
+				"TeamProfile"
+			],
+			[
+				"req",
+				"requested_user_reviewed"
+			],
+			[
+				"reque",
+				"requested_reciever"
+			],
+			[
+				"ge",
+				"get"
+			],
+			[
+				"friends",
+				"friendship_request_sent"
+			],
+			[
+				"e",
+				"except"
+			],
+			[
+				"UserManagementForm",
+				"UserManagementFormBasic"
+			],
+			[
+				"UserMa",
+				"UserManagementFormBasic"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"user_manageme",
+				"user_management_form"
+			],
+			[
+				"new_user",
+				"new_user_userprofile"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"Use",
+				"UserProfile"
+			],
+			[
+				"new",
+				"new_userprofile"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"Get",
+				"GET"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"regist",
+				"registration"
+			],
+			[
+				"login",
+				"login"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"Po",
+				"POST"
+			],
+			[
+				"regis",
+				"registration_form"
+			],
+			[
+				"rep",
+				"no-repeat"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"new_re",
+				"new_requests_count"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"new_mess",
+				"new_messages_count"
+			],
+			[
+				"team",
+				"team_members"
+			],
+			[
+				"sta",
+				"status_id"
+			],
+			[
+				"get",
+				"get"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"me",
+				"method"
+			],
+			[
+				"ta",
+				"task_id"
+			],
+			[
+				"task",
+				"task_id"
+			],
+			[
+				"team_mem",
+				"team_membership_management"
+			],
+			[
+				"team_cre",
+				"team_creation_success"
+			],
+			[
+				"team_c",
+				"team_creation_success"
+			],
+			[
+				"mem",
+				"member"
+			],
+			[
+				"team_revi",
+				"team_reviewed"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"user_stat",
+				"user_status_list"
+			],
+			[
+				"cre",
+				"creator"
+			],
+			[
+				"thread",
+				"thread_creation_form"
+			],
+			[
+				"forum",
+				"forum_id"
+			],
+			[
+				"tea",
+				"team_forum_threads"
+			],
+			[
+				"team_foru",
+				"team_forum_threads"
+			],
+			[
+				"team_fo",
+				"team_forum_list"
+			],
+			[
+				"N",
+				"None"
+			],
+			[
+				"team_tas",
+				"team_tasks_list"
+			],
+			[
+				"team_review",
+				"team_reviews_list"
+			],
+			[
+				"team_",
+				"team_membership_management"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"membe",
+				"members_data"
+			],
+			[
+				"acc",
+				"accept"
+			],
+			[
+				"P",
+				"POST"
+			],
+			[
+				"u",
+				"user_id"
+			],
+			[
+				"Team",
+				"TeamProfile"
+			],
+			[
+				"se",
+				"session"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"Ge",
+				"GET"
+			],
+			[
+				"sear",
+				"search_category_form"
+			],
+			[
+				"revie",
+				"review_user_form"
+			],
+			[
+				"revi",
+				"review_user_form"
+			],
+			[
+				"htt",
+				"HttpResponseRedirect"
+			],
+			[
+				"user_iin",
+				"user_invitation_list"
+			],
+			[
+				"user_invit",
+				"user_invitation_list"
+			],
+			[
+				"message",
+				"message_from"
+			],
+			[
+				"mess",
+				"message_to_form"
+			],
+			[
+				"searc",
+				"search_users"
+			],
+			[
+				"U",
+				"User"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lfg_app/models.py",
+			"settings":
+			{
+				"buffer_size": 9434,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/views.py",
+			"settings":
+			{
+				"buffer_size": 63427,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/urls.py",
+			"settings":
+			{
+				"buffer_size": 5423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg/settings.py",
+			"settings":
+			{
+				"buffer_size": 3033,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/login.html",
+			"settings":
+			{
+				"buffer_size": 286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/review_user.html",
+			"settings":
+			{
+				"buffer_size": 439,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/base_start.html",
+			"settings":
+			{
+				"buffer_size": 2100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/static/style.css",
+			"settings":
+			{
+				"buffer_size": 6759,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/search_teams.html",
+			"settings":
+			{
+				"buffer_size": 1348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/base_start_user.html",
+			"settings":
+			{
+				"buffer_size": 2078,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/templates/lfg_app/base_start_team.html",
+			"settings":
+			{
+				"buffer_size": 1635,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lfg_app/forms.py",
+			"settings":
+			{
+				"buffer_size": 3418,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/vlada/Desktop/Projekti/lfg_project",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app"
+	],
+	"file_history":
+	[
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/account_disabled.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg/urls.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/static/style.css",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/urls.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg/settings.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/admin.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/views.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/forms.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_overview.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_posts.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/base.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_tasks.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_reviews.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_overview.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_about_me.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_subtasks.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_reviews.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_about_us.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0001_initial.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_read.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/base_start_user.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/base_start.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/registration_success.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/tests.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_compose.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/base_start_team.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/review_user.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/start.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/index.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/registration.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/models.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_inbox.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_friends.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg/wsgi.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_teams.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_requests.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_invitations.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_outbox.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_membership_management.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_members.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_invitation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_threads.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/search_subcategory.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/search_teams.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/search_teams_in_cat.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/search_users.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/search_category.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_posts_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_threads_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_subtasks_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_tasks_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_management.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_management.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/review_team.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_creation_success.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/login.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/registration_in_use.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_rquests.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0005_auto_20150924_1817.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0006_auto_20150925_1532.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0008_auto_20150925_1628.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0007_auto_20150925_1603.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/migrations/0004_auto_20150924_1816.py",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_threads_posts_creation.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_threads_posts.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/team_forum_create.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/my_teams.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/my_friends.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/user_friendship_rquests.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_from.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_to_team.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_to_user.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_from_team.html",
+		"/home/vlada/Desktop/Projekti/lfg_project/lfg_app/templates/lfg_app/message_from_user.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"render_to_response",
+			"HttpResponseRedirect",
+			"post",
+			"reverse",
+			"Q(",
+			"Q",
+			"datetimefield",
+			"HttpResponseRedirect",
+			"start",
+			"team_reviews",
+			"form",
+			"logged_in_info",
+			"friendship_request",
+			"try",
+			"user"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lfg_app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1458,
+								1458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 439.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lfg_app/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lfg_app/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								781,
+								781
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lfg/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lfg_app/templates/lfg_app/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lfg_app/templates/lfg_app/review_user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lfg_app/templates/lfg_app/base_start.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lfg_app/static/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3012,
+								3012
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "lfg_app/templates/lfg_app/search_teams.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "lfg_app/templates/lfg_app/base_start_user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "lfg_app/templates/lfg_app/base_start_team.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "lfg_app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lfg.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

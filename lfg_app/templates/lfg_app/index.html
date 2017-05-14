@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block login %}
+		<div id="header_login_form">
+			<form action="{% url 'index' %}", method="POST">
+				{% csrf_token %}
+				{{ login_form }}
+				<input type="submit" value="Log in">
+			</form>
+		</div>
+{% endblock login %}
+
+{% block content %}
+	<div id="index_content">
+		{% block errors %}
+		{% endblock errors %}
+		<div class="info">
+			<p>Do you have an idea, but lack the manpower to bring it to life? Or maybe you like doing something, but you just can't find a place to put your skill set to use?</p>
+			<p>TeamBuilder connects people from all over the world who are having trouble finding people they need, in their vicinity, to work on their projects. Create a team or search for existing ones to start doing what you really like!</p>
+		</div>
+		<div class="registration">
+			<h3>Sign up:</h3>
+			<form action="{% url 'registration' %}", method="POST">
+				{% csrf_token %}
+				{{ registration_form.as_p }}
+			<input type="submit" value="Register">
+			</form>
+		</div>
+{% endblock content %}
+{% block footer %}}
+	</div>
+	<div id="index_footer">
+		<p>Made by: Vladimir Milašinović</p>
+	</div>
+{% endblock footer %}

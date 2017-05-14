@@ -1,0 +1,46 @@
+{% extends "base_start.html" %}
+
+{% block title %}
+{{ request.user.first_name|title }} {{ request.user.last_name|title }}
+{% endblock title %}
+
+{% load staticfiles %}
+
+{% block profile_data %}
+<div class="profile_data">
+	{% if requested_user %}
+	<img src="/static/images/{{ requested_user.userprofile.image }}" height="80" width="80">
+	<h2>{{ requested_user.first_name|title }}</h2>
+	<h2>{{ requested_user.last_name|title }}</h2>
+	{% endif %}
+	{% if not requested_user %}
+	<img src="/static/images/{{ request.user.userprofile.image }}" height="80" width="80">
+	<h2>{{ request.user.first_name|title }}</h2>
+	<h2>{{ request.user.last_name|title }}</h2>
+	{% endif %}
+</div>
+{% endblock profile_data %}
+
+{% block content_data %}
+	{% if requested_user %}
+	<div class="content_nav">
+		<a href="{% url 'user_overview' request.user.id %}"><div><img src="{% static 'images/default_images/home.png' %}" width="40" height="40"></div></a>
+		<a href="{% url 'user_overview' requested_user.id %}"><div><p>Overview</p></div></a>
+		<a href="{% url 'user_about_me' requested_user.id %}"><div><p>About Me</p></div></a>
+		<a href="{% url 'user_friends' requested_user.id %}"><div><p>Friends</p></div></a>
+		<a href="{% url 'user_teams' requested_user.id %}"><div><p>Teams</p></div></a>
+		<a href="{% url 'user_reviews' requested_user.id %}"><div><p>Reviews</p></div></a>
+	</div>
+	{% endif %}
+	{% if not requested_user %}
+	<div class="content_nav">
+		<a href="{% url 'user_overview' request.user.id %}"><div><img src="{% static 'images/default_images/home.png' %}" width="40" height="40"></div></a>
+		<a href="{% url 'user_overview' request.user.id %}"><div><p>Overview</p></div></a>
+		<a href="{% url 'user_about_me' request.user.id %}"><div><p>About Me</p></div></a>
+		<a href="{% url 'user_friends' request.user.id %}"><div><p>Friends</p></div></a>
+		<a href="{% url 'user_teams' request.user.id %}"><div><p>Teams</p></div></a>
+		<a href="{% url 'user_reviews' request.user.id %}"><div><p>Reviews</p></div></a>
+	</div>
+	{% endif %}
+{% block data %}{% endblock data %}
+{% endblock content_data %}

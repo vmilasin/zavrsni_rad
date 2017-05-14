@@ -1,0 +1,41 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>Team invitations:</h1>
+    <br>
+    <div class="context_data">
+        <ul>
+        {% for result in pages %}
+            <l1 class="result_url">
+                <a href="{{ result.team.get_absolute_url }}">
+                    <div>
+                         <img src="/static/images/{{ result.team.image }}" height="80" width="80">
+                    </div>
+                    <div>
+                        <p>  {{ result.team.name|title }}  </p>
+                    </div>
+                </a>
+                <a href="{% url 'invitation_processing' request_id=result.id accepted='0' %}">Decline</a>
+                <a href="{% url 'invitation_processing' request_id=result.id accepted='1' %}">Accept</a>
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>        
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endblock data %}

@@ -1,0 +1,23 @@
+{% extends "base_start_team.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="about_info">
+	<h2>Category: </h2><p>{{ requested_team.category.category|title }} -- {{ requested_team.category|title }}</p>
+	<h2>Founded: </h2><p>{{ requested_team.date_founded }}</p>
+	<br>
+	<h2>Leader: </h2><a href="{{ leader.user.userprofile.get_absolute_url }}"><p>{{ leader.user.first_name|title }} {{ leader.user.last_name|title }}</p></a>
+	<h2>Country: </h2><p>{{ requested_team.country|title }}</p>
+	<h2>City: </h2><p>{{ requested_team.city|title }}</p>
+	<h2>Address: </h2><p>{{ requested_team.address|title }}</p>
+	<br>
+	{% if requested_team.recruiting == 'Y' %}
+	<h2>Recruiting: </h2><p>Yes</p>
+	{% endif %}
+	{% if requested_team.recruiting == 'N' %}
+	<h2>Recruiting: </h2><p>No</p>
+	{% endif %}
+	<br>
+	<h2>Team description:</h2><pre>{{ requested_team.description }}</pre>
+</div>
+{% endblock data %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="index_content">
+	<div>
+		<p>Please log in to your account:</p>
+		<form action="{% url 'index' %}", method="POST">
+		{% csrf_token %}
+		{{ login_form }}
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+{% endblock content %}

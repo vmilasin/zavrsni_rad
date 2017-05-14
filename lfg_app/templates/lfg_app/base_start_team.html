@@ -1,0 +1,33 @@
+{% extends "base_start.html" %}
+
+{% block title %}
+{{ requested_team.name|title }}
+{% endblock title %}
+
+{% load staticfiles %}
+
+{% block profile_data %}
+<div class="profile_data">
+	<img src="/static/images/{{ requested_team.image }}" height="80" width="80">
+	<h2>{{ requested_team.name|title }}</h2>
+</div>
+{% endblock profile_data %}
+
+{% block content_data %}
+<div class="content_nav">
+	<a href="{% url 'user_overview' request.user.id %}"><img src="{% static 'images/default_images/home.png' %}" width="40" height="40"></a>
+	<a href="{% url 'team_overview' requested_team.id %}"><div class="start_menu"><p>Overview</p></div></a>
+	<a href="{% url 'team_about_us' requested_team.id %}"><div class="start_menu"><p>About us</p></div></a>
+	<a href="{% url 'team_members' requested_team.id %}"><div class="start_menu"><p>Members</p></div></a>
+	<a href="{% url 'team_reviews' requested_team.id %}"><div class="start_menu"><p>Reviews</p></div></a>
+	{% if request.user == leader.user or request.user == mods.user or request.user == users.user %}
+		<a href="{% url 'team_tasks' requested_team.id %}"><div class="start_menu"><p>Tasks</p></div></a>
+		<a href="{% url 'team_forum' requested_team.id %}"><div class="start_menu"><p>Forum</p></div></a>
+	{% endif %}
+	{% if request.user == leader.user or request.user == mods.user %}
+		<a href="{% url 'team_management' requested_team.id %}"><div class="start_menu"><p>Team Management</p></div></a>
+		<a href="{% url 'team_invitation' requested_team.id %}"><div class="start_menu"><p>Invite New Members</p></div></a>
+	{% endif %}
+</div>
+{% block data %}{% endblock data %}
+{% endblock content_data %}

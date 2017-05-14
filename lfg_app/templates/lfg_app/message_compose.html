@@ -1,0 +1,14 @@
+{% extends "base_start_user.html" %}
+
+{% block data %}
+<div class="context">
+	<h1>Message to {{ requested_reciever.first_name|title }} {{ requested_reciever.last_name|title }}:</h1>
+	<div class="form">
+		<form action="{% url 'message_compose' requested_reciever.id %}", method="POST">
+		   {% csrf_token %}
+		   {{ message_compose_form }}
+		   <input type="submit" value="Submit">
+	    </form>		
+	</div>
+</div>
+{% endblock data %}

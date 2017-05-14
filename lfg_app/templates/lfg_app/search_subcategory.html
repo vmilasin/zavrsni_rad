@@ -1,0 +1,38 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+	<h1>Search subcategories by name:</h1>
+    <br>
+    <div class="context_data">
+        <form action="{% url 'search_subcategory' requested_category.id %}", method="POST">
+        {% csrf_token %}
+        {{ search_subcategory_form }}
+        <input type="submit" value="Submit">
+        </form>
+        <br><br>
+        <ul>
+        {% for result in pages %}
+            <l1 class="result_url">
+                <a href="{{ result.get_absolute_url }}">{{ result.subcategory }}</a>
+            </l1>
+        {% endfor %}
+        </ul>
+        <br>
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endblock data %}

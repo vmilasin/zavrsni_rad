@@ -1,0 +1,54 @@
+{% extends "base_start_user.html" %}
+{% load staticfiles %}
+
+{% block data %}
+<div class="context">
+    <h1>My teams:</h1>
+    <div class="context_data">
+        {% if user_id == logged_in_user.id|slugify %}
+        <br>
+        <a href="{% url 'search_teams' %}" class="search"><p>Search for existing teams</p></a>
+        <br>
+        {% endif %}
+        <ul>
+        {% for result in pages %}
+            <l1 class="result_url">
+                <a class='result_data' href="{{ result.team.get_absolute_url }}">
+                    <div>
+                        <img src="/static/images/{{ result.team.image }}" height="80" width="80">
+                    </div>
+                    <div>
+                        <p>  {{ result.team.name|title }}</p>
+                    </div>
+                </a>
+                {% if user_id == logged_in_user.id|slugify and logged_in_user != result.user_type == 'LDR' %}
+                    <a href="{% url 'leave_team' result.id %}">
+                        <div>
+                            <img src="{%static 'images/default_images/leave.png' %}" height="20" width="20">
+                        </div>
+                    </a>
+                {% endif %}
+            </l1>
+           {% empty %}
+           </ul>
+           <p>You haven't joined or created any teams yet!</p>
+        {% endfor %}
+        </ul>
+        <br>
+    </div>
+    <div class="pagination">
+        <span class="step-links">
+            {% if pages.has_previous %}
+                <a href="?page={{ pages.previous_page_number }}">Previous</a>
+            {% endif %}
+            <span class="current">
+                Page {{ pages.number }} of {{ pages.paginator.num_pages }}.
+            </span>
+            {% if pages.has_next %}
+                <a href="?page={{ pages.next_page_number }}">Next</a>
+            {% endif %}
+        </span>
+    </div>
+    <br>
+</div>
+{% endblock data %}
